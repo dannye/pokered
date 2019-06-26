@@ -206,8 +206,11 @@ PalletTownText5: ; sign by fence
 	text_end
 
 PalletTownText6: ; sign by Red's house
-	text_far _PalletTownText6
-	text_end
+	;text_far _PalletTownText6
+	;text_end
+	text_asm
+	farcall PlayAllSounds
+	jp TextScriptEnd
 
 PalletTownText7: ; sign by Blue's house
 	text_far _PalletTownText7
