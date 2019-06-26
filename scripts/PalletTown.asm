@@ -206,8 +206,11 @@ PalletTownText5: ; sign by fence
 	db "@"
 
 PalletTownText6: ; sign by Red’s house
-	TX_FAR _PalletTownText6
-	db "@"
+	;TX_FAR _PalletTownText6
+	;db "@"
+	TX_ASM
+	callba PlayAllSounds
+	jp TextScriptEnd
 
 PalletTownText7: ; sign by Blue’s house
 	TX_FAR _PalletTownText7

@@ -2096,3 +2096,7 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+
+SECTION "play all sounds", ROMX
+INCLUDE "playallsounds.asm"
