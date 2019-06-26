@@ -11,6 +11,12 @@ PlayAllSounds::
 	ld c, 60
 	call DelayFrames
 
+	; clear modifiers
+	ld a, 0
+	ld [wFrequencyModifier], a
+	ld a, $80
+	ld [wTempoModifier], a
+
 	; play sfx for audio 1
 	ld a, BANK(SFX_Headers_1)
 	ld hl, SoundsToPlay1
